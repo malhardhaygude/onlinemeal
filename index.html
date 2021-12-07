@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width: 340px)" href="cssphone.css">
+    <title>Best Online Dairy Products Services | MalharOnlineMeal.com </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+
+        /* CSS Variable */
+        :root {
+            --navbar-height: 59px;
+        }
+
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0px;
+            flex-direction: column;
+
+
+        }
+
+        #navbar::before {
+            content: " ";
+            background-color: #a9bffa82;
+            border-radius: 13px;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -20;
+            opacity: 0.8;
+
+        }
+
+        #logo {
+            margin: 4px 37px;
+
+            /* height: 56px; */
+        }
+
+        #logo img {
+            width: 107px;
+            height: 60px;
+            border-radius: 15px;
+        }
+
+        #navbar ul {
+            display: flex;
+        }
+
+        #navbar ul li {
+            /* color: blanchedalmond; */
+            list-style: none;
+            font-size: 1.3rem;
+
+        }
+
+        #navbar ul li a {
+            display: block;
+            padding: 3px 22px;
+            color: navy;
+            list-style: none;
+            font-size: 1.3rem;
+            text-decoration: none;
+            border-radius: 34px;
+            font-family: 'Baloo 2', cursive;
+            font-weight: bolder;
+
+        }
+
+        #navbar ul li a:hover {
+
+            color: rgb(20, 20, 19);
+            background-color: white;
+
+
+        }
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            justify-content: center;
+            align-items: center;
+            height: 470px;
+        }
+
+        #home::before {
+            content: " ";
+            background: url(bg1.jpeg) no-repeat center center/cover;
+            position: absolute;
+            height: 67%;
+            width: 100%;
+            z-index: -20;
+            opacity: 0.68;
+        }
+
+        #home h1 {
+            color: navy;
+            text-align: center;
+            font-family: 'Baloo 2', cursive;
+        }
+
+        #home p {
+            color: navy;
+            text-align: center;
+            font-size: 1.4rem;
+            font-family: 'Baloo 2', cursive;
+        }
+        .buy-btn{
+              position: relative;
+              /* left: 90px; */
+              background-color: red;
+              border: black;
+              height: 30px;
+              width: 200px;
+              border-radius: 5px;
+              margin-bottom: 10px;
+              margin-top: 10px;
+          }
+          .price-cont{
+                border: 1px solid grey;
+                width: 60%;
+                margin: auto;
+                text-align: center;
+                background-color: rgb(125, 193, 248);
+          }
+
+        .h-primary {
+            font-size: 2.8rem;
+            padding: 12px;
+            /* color: white; */
+            /* text-align: center; */
+            font-family: 'Baloo 2', cursive;
+        }
+
+        .h-secondary {
+            font-size: 2.8rem;
+            padding: 12px;
+            /* color: white; */
+            /* text-align: center; */
+            font-family: 'Baloo 2', cursive;
+        }
+
+        .btn {
+            padding: 4px 20px;
+            border: 2px solid white;
+            background-color: rgb(233, 140, 106);
+            margin: 14px;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        #services {
+            margin: 34px;
+            display: flex;
+
+        }
+
+        #services .box {
+
+            border: 2px solid red;
+            padding: 34px;
+            margin: 3px 4px;
+            border-radius: 34px;
+            background-color: #f0c6c6;
+
+
+        }
+
+        #services .box img {
+            height: 160px;
+            display: block;
+            margin: auto;
+
+
+
+        }
+
+        #services .box p {
+            font-family: 'Baloo 2', cursive;
+        }
+
+        #client-section {
+
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            justify-content: center;
+            align-items: center;
+            height: 429px;
+        }
+
+        #client-section::before {
+            content: "";
+            position: absolute;
+            background: url(bg.png) no-repeat center center/cover;
+            width: 100%;
+            height: 70%;
+            z-index: -2;
+            opacity: 0.6;
+        }
+
+        .client-heading {
+            position: relative;
+            bottom: 69px;
+            font-size: 2.8rem;
+            padding: 12px;
+            /* color: white; */
+            /* text-align: center; */
+            font-family: 'Baloo 2', cursive;
+            text-align: center;
+        }
+
+        #clients {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #clients img {
+            height: 124px
+        }
+
+        .client-item {
+            padding: 34px;
+        }
+
+        #contact {
+            position: relative;
+            height: 627px;
+            top: 36px;
+
+        }
+
+        #contact::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.67;
+            background: url(contact.jpg) no-repeat center center/cover;
+
+        }
+
+        #contact-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px;
+        }
+
+        #contact-box input,
+        #contact-box textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 23px;
+            font-size: 1.1rem;
+        }
+
+        #contact-box form {
+            width: 40%;
+
+        }
+
+        #contact-box label {
+            font-size: 1.3rem;
+            font-family: 'Baloo 2', cursive;
+
+        }
+        #contact h1{
+            font-size: 2.3rem;
+        }
+
+        footer {
+            background: #000;
+            color: white;
+            padding: 9px 20px;
+        }
+		.sub-btn{
+		  font-size: 1.3rem;
+            font-family: 'Baloo 2', cursive;
+			display:block;
+			width:23%;
+			margin: auto;
+            position: relative;
+            top: 25px;
+			border-radius:34px;
+			border:2px solid red;
+		}
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="Mylogo_1.jpg" alt="MyOnlineMeal.com">
+
+        </div>
+        <ul>
+            <li class="item"><a href="#home" >Home</a></li>
+            <li class="item"><a href="#ser123" >Our Products</a></li>
+            <li class="item"><a href="#client-section" >Our Clients</a></li>
+            <li class="item"><a href="#contact" >Contact Us</a></li>
+            <li class="item"><a href="#" >Email Us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome To MalharDairyProducts</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis odio culpa beatae iusto ad veniam laborum
+            laboriosam error pariatur placeat eius minus cum cumque nihil quisquam, enim omnis inventore corporis
+            consequuntur? Voluptatum, asperiores odio.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium architecto at nihil illum magnam illo
+            quos molestiae suscipit. Officiis voluptate excepturi ab commodi.</p>
+        <button class="btn">Order Now</button>
+    </section>
+    <section class="services-container" id="ser123">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="basundi.jpg" alt="">
+                <h2 class="h-secondary center">Basundi</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vel, veniam voluptas
+                    consectetur recusandae id, ut qui perspiciatis blanditiis fugit illum officiis. Eius aperiam iste
+                    neque ratione quos autem nisi reiciendis eligendi tempore? Cupiditate.</p>
+                    <button class="buy-btn">Buy Now</button> 
+                    <div class="price-cont">Rs.100 For 250ml </div>
+            </div>
+            <div class="box">
+                <img src="paneer.jpg" alt="">
+                <h2 class="h-secondary center">Paneer</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vel, veniam voluptas
+                    consectetur recusandae id, ut qui perspiciatis blanditiis fugit illum officiis. Eius aperiam iste
+                    neque ratione quos autem nisi reiciendis eligendi tempore? Cupiditate.</p>
+                    <button class="buy-btn">Buy Now</button> 
+                    <div class="price-cont">Rs.100 For 250ml </div>
+            </div>
+            <div class="box">
+                <img src="shrikhand.jpg" alt="">
+                <h2 class="h-secondary center">Shrikhand</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vel, veniam voluptas
+                    consectetur recusandae id, ut qui perspiciatis blanditiis fugit illum officiis. Eius aperiam iste
+                    neque ratione quos autem nisi reiciendis eligendi tempore? Cupiditate.blanditiis fugit illum officiis</p>
+                    <button class="buy-btn">Buy Now</button> 
+                    <div class="price-cont">Rs.100 For 250ml </div>
+            </div>
+            <div class="box">
+                <img src="lassi.jpg" alt="">
+                <h2 class="h-secondary center">Lassi</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vel, veniam voluptas
+                    consectetur recusandae id, ut qui perspiciatis blanditiis fugit illum officiis. Eius aperiam iste
+                    neque ratione quos autem nisi reiciendis eligendi tempore? Cupiditate.</p>
+                    <button class="buy-btn">Buy Now</button> 
+                    <div class="price-cont">Rs.100 For 250ml </div>
+            </div>
+            <div class="box">
+                <img src="milkshake.jpg" alt="">
+                <h2 class="h-secondary center">Milkshake</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vel, veniam voluptas
+                    consectetur recusandae id, ut qui perspiciatis blanditiis fugit illum officiis. Eius aperiam iste
+                    neque ratione quos autem nisi reiciendis blanditiis fugit illum officiis eligendi tempore? Cupiditate.</p>
+                    <button class="buy-btn">Buy Now</button> 
+                    <div class="price-cont">Rs.100 For 250ml </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="client-section">
+        <h1 class="client-heading">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="logo1.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="logo2.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="logo3.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="logo4.png" alt="Our Client">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="mail">Email:</label>
+                    <input type="email" name="name" id="mail" placeholder="Enter Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="Number">Phone Number:</label>
+                    <input type="number" name="number" id="Number" placeholder="Enter Your Phone No.">
+                </div>
+                <div class="form-group">
+                    <label for="Message">Message:</label>
+                    <textarea name="message" id="Message" cols="20" rows="5"></textarea>
+                </div>
+				<button class="sub-btn">Submit</button>
+					
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &COPY; www.malharonlinemeal.com. All Rights Are Rserved!
+        </div>
+    </footer>
+</body>
+
+</html>
